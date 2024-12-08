@@ -41,7 +41,10 @@ while True:
         (x, y, w, h) = bbox
 
         # Yüzün merkezini hesapla
+        #center_x = x + w // 2
         center_x = x + w // 2
+        center_y = y + h // 2
+        center = (center_x, center_y)
 
         # Yeni bir oran belirle
         ratio = 2.0  
